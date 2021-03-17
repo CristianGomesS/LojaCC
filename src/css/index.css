@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    
+}
+#topo ul{
+    margin:0;
+    background-color: #e6f5ff;
+    list-style: none;
+}
+#topo ul li{
+    display: inline;
+    padding: 50px 10px;
+}
+
+
+
+#menu ul{
+    margin:0;
+    background-color: #003d66;
+    list-style: none;
+}
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    padding: 10px 10px;
+    display: inline-block;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+
+    color:#1aa3ff;
+}
+
+
+#linha ul{
+    margin:0;
+    background-color: #660000;
+    list-style: none;
+}
+#linha ul a{
+    padding: 0px 0px;
+    display: inline-block;
+    color: #660000;
+    text-decoration: none;
+}
