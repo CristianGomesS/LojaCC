@@ -11,67 +11,74 @@
 
     <title> Cadastro </title>
 
-    <body>
+<body>
 
-<header>
+    <header>
 
-</header>
+    </header>
 
-        <form class="form">
-            <div class="card">
-                <div class="card-top">
-                    <img class="imglogin" src="../assets/loogin.png" alt="">
-                    <h2 class="titulo"> Painel de controle</h2>
-                    <p>Cadastrar Usuario</p>
-                </div>
-
-                <div class="card-grupo">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="CompraCerta@hotmail.com" required>
-                </div>
-
-                <div class="card-grupo">
-                    <label>Nome</label>
-                    <input type="text" name="Nome" placeholder="Nome" required>
-                </div>
-                <div class="card-grupo">
-                    <label>Sobrenome</label>
-                    <input type="text" name="Sobrenome" placeholder="Sobrenome">
-                </div>
-
-                <div class="card-grupo">
-                    <label>Telefone</label>
-                    <input type="text" name="Telefone" placeholder="(99)9 9999-9999">
-                </div>
-
-                <div class="card-grupo">
-                    <label>Senha</label>
-                    <input type="password" name="Senha" placeholder="*******" required>
-                </div>
-                
-                <center>
-                    <div class="card-grupo btn">
-
-                        <button ><a href="login.html"> Cadastrar-se</button>
-
-                    </div>
-                </center>
-                
-                    <div class="card-grupo btn">
-
-                        <label><a href="login.html"><i id="italico">já sou cadastrado</i> </label>
-
-                    </div>
-                </center>
-                
-                
+    <form class="form">
+        <div class="card">
+            <div class="card-top">
+                <img class="imglogin" src="../assets/loogin.png" alt="">
+                <h2 class="titulo"> Painel de controle</h2>
+                <p>Cadastrar Usuario</p>
             </div>
-        </form>
+            <div class="card-grupo">
+                <label>Nome</label>
+                <input type="text" name="Nome" placeholder="Nome" required>
+            </div>
+            <div class="card-grupo">
+                <label>Sobrenome</label>
+                <input type="text" name="Sobrenome" placeholder="Sobrenome">
+            </div>
+            <div class="card-grupo">
+                <label>Senha</label>
+                <input type="password" name="Senha" placeholder="*******" required>
+            </div>
+            <div class="card-grupo">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="CompraCerta@hotmail.com" required>
+            </div>
+            <div class="card-grupo">
+                <label>Data de Nascimento</label>
+                <input type="date" name="Date"  required>
+            </div>
+             <div class="checkbox">
+             <label>Sexo:</label>
+             <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Masculino
+             <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Feminino/
+             <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Não Binario
+            </div>
+            
+            <div class="card-grupo">
+                <label>Telefone</label>
+                <input type="text" name="Telefone" placeholder="(99)9 9999-9999">
+            </div>
+        
+            <center>
+                <div class="card-grupo btn">
 
-        <footer>
+                    <button><a href="login.html"> Cadastrar-se</button>
 
-        </footer>
-    </body>
+                </div>
+            </center>
+
+            <div class="card-grupo btn">
+
+                <label><a href="login.html"><i id="italico">já sou cadastrado</i> </label>
+
+            </div>
+            </center>
+
+
+        </div>
+    </form>
+
+    <footer>
+
+    </footer>
+</body>
 
 
 </head>
