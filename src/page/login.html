@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" div="ltr">
-
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+<link rel="stylesheet" type="text/css" href="../css/login-cadastro.css">
 <link rel="shortcut icon" href="../assets/favicon.png" />
 
 <head>
@@ -13,10 +13,28 @@
     
     
     <title> Tela de login </title>
-
-    <body>
+</head>
+    <body >
         
+    <header>
+        <div class="container">
+            <header >
+              <div class="topo"  >
+                <ul>
+                    <li><img src="../assets/Logo.png"></li>
+                    <li><img src="../assets/Logo1.png"></li>
+                </ul>     
+            </div>
 
+            <div class="menu"  >
+                <ul>
+                    <li class="navbar-titulo" ><a href="index.html" >Home</a></li> 
+                    <li><a href="cadastro.html" >Cadastro</a></li> 
+                    <li><a href="login.html">Login</a></li>         
+                </ul>
+            </div >
+    </header>
+        <main>
         <form class="form">
             <div class="card">
                 <div class="card-top">
@@ -24,41 +42,53 @@
                     <h2 class="title"> Painel de controle</h2>
                     <p>Login</p>
                 </div>
-
                 <div class="card-grupo">
                     <label>Email</label>
                     <input type="email" name="email" placeholder="Digite seu email" required>
                 </div>
-
                 <div class="card-grupo btn">
                     <label>Senha</label>
                     <input type="password" name="Senha" placeholder="Digite sua Senha" required>
                 </div>
-
                 <div class="card-grupo">
                     <label><input type="checkbox">Lembre-me</label>
                 </div>
                 <center>
                     <div class="card-grupo btn">
-                        <button ><a href="index.html" id="Acessar"> Acessar</button>
+                        <button ><a href="index.html" class="tagA"> Acessar</button>
                     </div>
                 </center>
-
+        
                 <center>
                     <div class="card-grupo btn">
-
-                        <button  type="button"><a href="cadastro.html"> Cadastra-se</button>
-
+        
+                        <button  type="button"><a class="tagA" href="cadastro.html"> Cadastra-se</button>
+        
                     </div>
                 </center>
+            </form> 
 
+        
+    </div>
 
-            </div>
-        </form>
+    <hr class="marcador-div">
+    <footer class="container"> 
+        <p class="float-end">
+            <a href="#"> Back to top</a>
+        </p>
+        <p>
+            © 2021 Cristian Gomes, web. ·<a href="#">Privado
+            </a>
+            <a href="#">Termos
+            </a>
+        </p>
+    </footer>
+    </main>
     </body>
 
 
-</head>
+
 
 
 </html>
+

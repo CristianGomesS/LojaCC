@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br" div="ltr">
 
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/login-cadastro.css">
 <link rel="shortcut icon" href="../assets/favicon.png" />
-
+<link rel="stylesheet" type="text/css" href="../css/header-footer.css" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta http-equive="x-UA-Compatible" content="ie=edge">
 
     <title> Cadastro </title>
-
-<body>
+</head>
+<body >
 
     <header>
-
+            <div class="container">
+                <header >
+                  <div class="topo"  >
+                    <ul>
+                        <li><img src="../assets/Logo.png"></li>
+                        <li><img src="../assets/Logo1.png"></li>
+                    </ul>     
+                </div>
+    
+                <div class="menu"  >
+                    <ul>
+                        <li class="navbar-titulo" ><a href="index.html" >Home</a></li> 
+                        <li><a href="cadastro.html" >Cadastro</a></li> 
+                        <li><a href="login.html">Login</a></li>         
+                    </ul>
+                </div >
     </header>
-
+<main>
     <form class="form" onsubmit="displayForm" name="FormCadas">
         <div class="card">
             <div class="card-top">
@@ -47,7 +62,7 @@
              <div class="checkbox">
              <label>Sexo:</label>
              <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Masculino
-             <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Feminino/
+             <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Feminino
              <INPUT TYPE="RADIO" NAME="sexo" VALUE="cor">Não Binario
             </div>
             
@@ -59,14 +74,14 @@
             <center>
                 <div class="card-grupo btn">
 
-                    <button ><a href="login.html"> Cadastrar-se</button>
+                    <button ><a class="tagA" href="login.html"> Cadastrar-se</button>
 
                 </div>
             </center>
 
             <div class="card-grupo btn">
 
-                <label><a href="login.html"><i id="italico">já sou cadastrado</i> </label>
+                <label><a  href="login.html"><i id="italico">já sou cadastrado</i> </label>
 
             </div>
             </center>
@@ -74,8 +89,19 @@
 
         </div>
     </form>
+</main>
 
-    <footer>
+<hr class="marcador-div">
+<footer class="container"> 
+    <p class="float-end">
+        <a href="#"> Back to top</a>
+    </p>
+    <p>
+        © 2021 Cristian Gomes, web. ·<a href="#">Privado
+        </a>
+        <a href="#">Termos
+        </a>
+    </p>
 
     </footer>
 </body>
