@@ -2,36 +2,102 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #000;
-    background-image: url(../assets/PlanoDeFundo.jpgs);
+    background-image: url(../assets/PlanoDeFundo.jpg);
 }
 
 header{
-background:#660000;
-grid-column: 1/3;
-
+grid-area: h;
 }
 
 main{
-    background: blue;
+grid-area: m;
+
 }
  aside{
-     background:red;   
-     grid-column: 2;
-   
+     grid-area: a;
+     
 }   
 footer{
     color: aliceblue;
-    grid-column: 1/3;
+    grid-area: f;
     background-color: #212529;
     text-decoration:none;
     align-items: center;
-   padding-left: 10%;
+    padding-left: 10%;
 }
 
 .container-grid{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 13vh 70vh 10vh;
+    grid-template-rows: 14vh 80vh 14vh;
+    grid-template-areas:  "h h"
+                          "m a"
+                          "f f";
     grid-gap: 10px;
+}
+
+.sizeFixo{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+}
+.sizeEstante{
+    width: 220px;
+    height: 245px;
+}
+.card-itens{
+    box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.8);
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+.itenEstante{
+    text-align: center;
+    padding-top: 20px;
+}
+.imgEstante{
+    border-radius: 30px;
+    width: 80px;
+    box-shadow: 1px 10px 5px #cccc;
+}
+.categoria{
+    
+    text-align: right;
+   
+}
+.size-categoria{
+width: 150px;
+height: 55%;
+margin-left: 10px;
+
+}
+.cat-title{
+    background-color: #212529;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 30px;
+ 
+}
+.sub-title{
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+.divisoria{
+    margin: 5px;
+    justify-content: right; 
+}
+
+.preco{
+    background-color: blue;
+    align-self: center;
+}
+.title-estante{
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    background-color: #212529;
 }

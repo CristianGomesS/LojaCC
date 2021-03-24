@@ -47,6 +47,13 @@
     background-color: #212529;
 }
 
+.tag-a{
+    color: #000;
+    text-decoration: none;
+}
+.tag-a:hover{
+    color: red;
+}
 .tagA-hover{
     color: white;
     text-decoration: none;
