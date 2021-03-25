@@ -12,10 +12,12 @@ grid-area: h;
 main{
 grid-area: m;
 
+align-items: center;
+
 }
  aside{
      grid-area: a;
-     
+  
 }   
 footer{
     color: aliceblue;
@@ -28,10 +30,10 @@ footer{
 
 .container-grid{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 14vh 80vh 14vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 23vh  200vh 15vh;
     grid-template-areas:  "h h"
-                          "m a"
+                          "a m"
                           "f f";
     grid-gap: 10px;
 }
@@ -92,12 +94,21 @@ margin-left: 10px;
 }
 
 .preco{
-    background-color: blue;
+    
     align-self: center;
+   height: 20px;
 }
 .title-estante{
+  text-align: center;
+}
+.margin{
+    margin-right:70px;
+    background-color: #cbd5d8;
+    padding: 10px;
+    
+}
+.size-title{
+    width: 890px;
+    
     text-align: center;
-    justify-content: center;
-    justify-self: center;
-    background-color: #212529;
 }
