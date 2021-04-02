@@ -2,113 +2,46 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(../assets/PlanoDeFundo.jpg);
+   
 }
 
-header{
-grid-area: h;
-}
 
-main{
-grid-area: m;
-
-align-items: center;
-
-}
- aside{
-     grid-area: a;
-  
-}   
-footer{
-    color: aliceblue;
-    grid-area: f;
-    background-color: #212529;
-    text-decoration:none;
-    align-items: center;
-    padding-left: 10%;
-}
-
-.container-grid{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 23vh  200vh 15vh;
-    grid-template-areas:  "h h"
-                          "a m"
-                          "f f";
-    grid-gap: 10px;
-}
-
-.sizeFixo{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    
-}
 .sizeEstante{
-    width: 220px;
-    height: 245px;
+    width: 90%;
+    height: 90%;
 }
 .card-itens{
-    box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.8);
+    box-shadow: 1px 1px 5px rgba(143, 141, 141, 0.8);
     background-color: rgb(250, 250, 250);
     border-radius: 5px;
-    margin-bottom: 1%;
-    margin-left: 1%;
+    margin: 10%;
+    padding-bottom: 10%;
+   
+   
 }
+.card-bg{
+    box-shadow: 1px 1px 5px rgba(143, 141, 141, 0.8);
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    margin: 10%;
+    padding: 2%;
+}
+
 .itenEstante{
     text-align: center;
     padding-top: 20px;
 }
 .imgEstante{
     border-radius: 30px;
-    width: 80px;
+    width: 70%;
     box-shadow: 1px 10px 5px #cccc;
 }
-.categoria{
-    
-    text-align: right;
-   
-}
-.size-categoria{
-width: 150px;
-height: 55%;
-margin-left: 10px;
 
-}
-.cat-title{
-    background-color: #212529;
-    color: aliceblue;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    height: 30px;
- 
-}
-.sub-title{
-    margin: 10px;
-    width: 200px;
-    text-align: center;
-}
+
 .divisoria{
     margin: 5px;
     justify-content: right; 
 }
 
-.preco{
-    
-    align-self: center;
-   height: 20px;
-}
-.title-estante{
-  text-align: center;
-}
-.margin{
-    margin-right:70px;
-    background-color: #cbd5d8;
-    padding: 10px;
-    
-}
-.size-title{
-    width: 890px;
-    
-    text-align: center;
-}
+
+
