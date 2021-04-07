@@ -46,8 +46,8 @@
 
 #display{
     display: grid;
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
 }
 #itensSlide{
      
@@ -63,4 +63,23 @@ h3{
     padding-left: 8%;
     padding-bottom: 10%;
 }
+.imgsize{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 20%;
+}
+.textCenter{
+    text-align: center;
+    font-size: 2vh;
+}
 
+@media(max-width:760px){
+    .categoriaColor{
+      color: rgb(156, 146, 209);
+    }
+}
+@media(min-width: 760px){
+    .dropdown-menu{
+        min-width: 460px;
+    }
+}
