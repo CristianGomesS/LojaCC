@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br" div="ltr">
 
-<link rel="stylesheet" type="text/css" href="../css/login-cadastro.css">
-<link rel="shortcut icon" href="../assets/favicon.png" />
-<link rel="stylesheet" type="text/css" href="../css/header-footer.css" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta http-equive="x-UA-Compatible" content="ie=edge">
 
     <title> Cadastro </title>
+
+    <link rel="stylesheet" type="text/css" href="../css/login-cadastro.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/header-footer.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="../assets/JS/JQuery.js"></script>
 </head>
+
 <body >
 
     <header>
@@ -32,7 +37,10 @@
                 </div >
     </header>
 <main>
-    <form class="form" onsubmit="displayForm" name="FormCadas">
+    <div class="alert alert-danger" id='errorDiv' role="alert">
+        <p id='erro'></p>
+    </div>
+    <form class="form" id='entrada' onsubmit="displayForm" name="FormCadas">
         <div class="card">
             <div class="card-top">
                 <img class="imglogin" src="../assets/loogin.png" alt="">
@@ -41,19 +49,23 @@
             </div>
             <div class="card-grupo">
                 <label>Nome</label>
-                <input type="text" name="Nome" placeholder="Nome" required>
+                <input type="text" name="Nome"  style="text-transform: capitalize;" id='Nome' placeholder="Nome" required>
             </div>
             <div class="card-grupo">
                 <label>Sobrenome</label>
-                <input type="text" name="Sobrenome" placeholder="Sobrenome">
+                <input type="text" name="Sobrenome"  style="text-transform: capitalize;" id='Sobrenome' placeholder="Sobrenome">
             </div>
             <div class="card-grupo">
                 <label>Senha</label>
-                <input type="password" name="Senha" placeholder="*******" required>
+                <input id='senha1' type="password" name="Senha" placeholder="*******" required>
+            </div>
+            <div class="card-grupo">
+                <label>Confirmar Senha</label>
+                <input id='senha2' type="password" name="Senha" placeholder="*******" required>
             </div>
             <div class="card-grupo">
                 <label>Email</label>
-                <input type="email" name="email" placeholder="CompraCerta@hotmail.com" required>
+                <input type="email" name="email" id='email' placeholder="CompraCerta@hotmail.com" required>
             </div>
             <div class="card-grupo">
                 <label>Data de Nascimento</label>
@@ -70,7 +82,7 @@
                 <label>Telefone</label>
                 <input type="text" name="Telefone" placeholder="(99)9 9999-9999">
             </div>
-        
+
             <center>
                 <div class="card-grupo btn">
 
@@ -106,8 +118,46 @@
     </footer>
 </body>
 
+<script>
+//Codigo Javascript:
+$(document).ready(()=>{$('#errorDiv').hide()})
+$('#entrada').change(verificarErros);
 
-</head>
+function verificarErros() {
+    if(validarNomes() && validarSenha()) printError('');
+}
 
+function printError(coisa) {
+    if(coisa.length===0) {
+        $('#errorDiv').hide();
+        $('#error').text('');
+        return;
+    }
+    $('#errorDiv').show();
+    $('#erro').text('Erro: '.concat(coisa));
+}
+function validarSenha() {
+    const senha1=$('#senha1').val();
+    const senha2=$('#senha2').val();
+    if(senha1.length===0 && senha2.length===0) return true;
+    if(senha1.length<8 || senha1!==senha2) {
+        printError('Senha deve ser possuir no minimo 8 caracteres e os dois campos devem ser iguais');
+        return false;
+    }
+    return true;
+}
+function validarNomes() {
+    const Nome=$('#Nome').val();
+    const Sobrenome=$('#Sobrenome').val();
+    if(hasBadStuff(Nome) || hasBadStuff(Sobrenome)) {
+        printError('Nome e Sobrenome não podem conter digitos ou simbolos especiais tais como *, +, #, / ou espaço');
+        return false;
+    }
+    return true;
+}
+function hasBadStuff(string) {
+    return /[\d\ \*\\\-\/\+\@\!\#\$\%\&\(\)]/.test(string);
+}
+</script>
 
 </html>
