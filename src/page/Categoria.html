@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <title>Lojinha do seu zé</title>
-  <link rel="stylesheet" href="../css/header-footer.css">
-  <link rel="stylesheet" href="../css/Estrutura.css">
   
+ 
+  <link rel="stylesheet" href="../css/header-footer.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/Estrutura.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -25,40 +26,79 @@
   </style>
 </head>
 <header>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header ">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class=" alingLogo " href="#"> <img  class="logo" src="../assets/Logo.png" alt=""> </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class=""><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="btn-group">
+            <button class="btn btn2 btn-secondary dropdown-toggle active" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                  Categoria
+
             </button>
-            <a class=" alingLogo " href="#"> <img  class="logo" src="../assets/Ícone 1.png" alt=""> </a>
+            <ul class="dropdown-menu dropdown-menu-Left row " aria-labelledby="triggerId">
+             <li class="col-sm-4">
+
+               <h4 class="categoriaColor">categoria</h4>
+
+               <a href="#">teste 01</a>
+               <a href="#">teste 02</a>  
+               <a href="#">teste 03</a>
+             </li>
+             <li class="col-sm-4">
+
+               <h4 class="categoriaColor">categoria</h4>
+               
+               <a href="#">teste 01</a>
+               <a href="#">teste 02</a>  
+               <a href="#">teste 03</a>
+             </li>
+             <li class="col-sm-4">
+
+               <h4 class="categoriaColor">categoria</h4>
+               
+               <a href="#">teste 01</a>
+               <a href="#">teste 02</a>  
+               <a href="#">teste 03</a>
+             </li>
+           </ul>
+            
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <form class="navbar-form navbar-left" action="#">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit">
-                    <i class="glyphicon glyphicon-search"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+        </ul>
+        
+        <form class="navbar-form navbar-left" action="#">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+            </div>
+          </div>
+        </ul>
+        
+      </div>
+     
+    </div>
+  </div>
 </header>
 <body>
 
@@ -111,19 +151,20 @@
       </div>
 </div>
 <br><br>
+<!-- Itens-->
   <div class="card-bg " >
 <div class="container-fluid bg-3 text-center">    
-  <h3>Estante de Livros</h3><br>
+  <h3>Celulares</h3><br>
   <div>
     <table class="center">
      <tr>
        <th>
          <div class="card-itens  sizeEstante">
           <div class="itenEstante ">
-            <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
+            <img class="imgEstante" src="../assets/San1.jpg" alt="">
             <div class=" card-itens  ">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class=" card-itens">
+              </div>  <div class=" preco">
               <h5>R$ 39,99</h5>
             </div>
           </div>
@@ -132,10 +173,10 @@
        <th>
         <div class="card-itens sizeEstante  ">
          <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
+           <img class="imgEstante" src="../assets/San1.jpg" alt="">
            <div class=" card-itens ">
              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class=" card-itens">
+             </div>  <div class="preco">
              <h5>R$ 39,99</h5>
            </div>
          </div>
@@ -144,10 +185,10 @@
       <th>
         <div class="card-itens sizeEstante ">
          <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
+           <img class="imgEstante" src="../assets/San1.jpg" alt="">
            <div class=" card-itens ">
              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class="preco card-itens">
+             </div>  <div class="preco">
              <h5>R$ 39,99</h5>
            </div>
          </div>
@@ -156,37 +197,38 @@
       <th>
         <div class="card-itens sizeEstante ">
          <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
+           <img class="imgEstante" src="../assets/San1.jpg" alt="">
            <div class=" card-itens ">
              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class="preco card-itens">
+             </div>  <div class="preco">
              <h5>R$ 39,99</h5>
            </div>
          </div>
         </div>
       </th>
-      <th>
-        <div class="card-itens sizeEstante ">
-         <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
-           <div class=" card-itens ">
-             <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class="preco card-itens">
-             <h5>R$ 39,99</h5>
-           </div>
-         </div>
-        </div>
-      </th>
+     
       
      </tr>
      <tr>
       <td>
         <div class="card-itens sizeEstante">
           <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
+            <img class="imgEstante" src="../assets/San1.jpg" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+              </div>  <div class="preco">
+              <h5>R$ 39,99</h5>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card-itens sizeEstante">
+          <div class="itenEstante">
+            <img class="imgEstante" src=".../assets/San1.jpg" alt="">
+            <div class="title-estante card-itens">
+              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
+              </div>  <div class="preco">
               <h5>R$ 39,99</h5>
             </div>
           </div>
@@ -198,7 +240,7 @@
             <img class="imgEstante" src="../assets/Logo.png" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+              </div>  <div class="preco">
               <h5>R$ 39,99</h5>
             </div>
           </div>
@@ -210,36 +252,13 @@
             <img class="imgEstante" src="../assets/Logo.png" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+              </div>  <div class="preco">
               <h5>R$ 39,99</h5>
             </div>
           </div>
         </div>
       </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
+     
      </tr>
      <tr>
       <td>
@@ -248,7 +267,7 @@
             <img class="imgEstante" src="../assets/Logo.png" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+              </div>  <div class="preco">
               <h5>R$ 39,99</h5>
             </div>
           </div>
@@ -260,7 +279,7 @@
             <img class="imgEstante" src="../assets/Logo.png" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+              </div>  <div class="preco">
               <h5>R$ 39,99</h5>
             </div>
           </div>
@@ -272,7 +291,8 @@
             <img class="imgEstante" src="../assets/Logo.png" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+            </div>  <div class="preco">
+             <hr class="divisoria">
               <h5>R$ 39,99</h5>
             </div>
           </div>
@@ -284,24 +304,14 @@
             <img class="imgEstante" src="../assets/Logo.png" alt="">
             <div class="title-estante card-itens">
               <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
+              </div>  <div class="">
+                <hr class="divisoria">
               <h5>R$ 39,99</h5>
             </div>
           </div>
         </div>
       </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
+     
      </tr>
     </table>
   </div>
@@ -317,7 +327,7 @@
             <a  class="tagA-hover" href="#"> Back to top</a>
         </p>
         <p >
-            © 2021 Cristian Gomes, web. ·<a href="#">Privado
+            © 2021 Equipe Busca pé, web. ·<a href="#">Privado
             </a>
             ,
             <a href="#">Termos
