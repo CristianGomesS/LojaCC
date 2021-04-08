@@ -80,6 +80,6 @@ h3{
 }
 @media(min-width: 760px){
     .dropdown-menu{
-        min-width: 460px;
+        min-width: 560px;
     }
 }
