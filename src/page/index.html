@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Compra Certa™</title>
-  <link rel="stylesheet" href="../css/header-footer.css">
-  <link rel="stylesheet" href="../css/Estrutura.css">
+  <title>Compra Certa</title>
+  
+
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/header-footer.css">
+  <link rel="stylesheet" href="../css/Estrutura.css">
+  <link rel="shortcut icon" href="../assets/Logo.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -31,10 +34,34 @@
       padding: 25px;
     }
 
+
     .carousel img {
       max-width: 50%;
       margin:auto;
     }
+
+    .carousel-indicators {
+    bottom: -12px;
+    }
+    .carousel-control {
+
+     width: 8%;
+     }
+    
+     .btn2{
+       padding: 15px 12px;
+       border-radius: 0px;
+       display: block;
+       background-color: black;
+       color: #f2f2f2;
+     }
+     .table>thead>tr>th {
+       padding: 10px;
+     }
+
+   
+    
+
   </style>
 </head>
 <header>
@@ -51,10 +78,45 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li class=""><a href="#">About</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Contact</a></li>
+              <div class="btn-group">
+                <button class="btn btn2 btn-secondary dropdown-toggle active" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                      Categoria
+
+                </button>
+                <ul class="dropdown-menu dropdown-menu-Left row " aria-labelledby="triggerId">
+                 <li class="col-sm-4">
+   
+                   <h4 class="categoriaColor">categoria</h4>
+   
+                   <a href="#">teste 01</a>
+                   <a href="#">teste 02</a>  
+                   <a href="#">teste 03</a>
+                 </li>
+                 <li class="col-sm-4">
+   
+                   <h4 class="categoriaColor">categoria</h4>
+                   
+                   <a href="#">teste 01</a>
+                   <a href="#">teste 02</a>  
+                   <a href="#">teste 03</a>
+                 </li>
+                 <li class="col-sm-4">
+   
+                   <h4 class="categoriaColor">categoria</h4>
+                   
+                   <a href="#">teste 01</a>
+                   <a href="#">teste 02</a>  
+                   <a href="#">teste 03</a>
+                 </li>
+               </ul>
+                
+              </div>
             </ul>
+            
             <form class="navbar-form navbar-left" action="#">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search">
@@ -67,11 +129,26 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+                </div>
+              </div>
             </ul>
+            
           </div>
+         
         </div>
-      </nav>
+      </div>
+      <div class="container-fluid navbar-inverse">
+        <div class="navbar-header ">
+       
+          <a class=" alingLogo " href="#"> <img  class="" src="../assets/Logo1.png" alt=""> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+    
+        </div>
+    
+        
+   
 </header>
 <body>
 
@@ -125,223 +202,145 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
           </a>
+
     </div>
-      </div>
-</div>
-<br><br>
-  <div class="card-bg " >
-<div class="container-fluid bg-3 text-center">    
-  <h3>Estante de Livros</h3><br>
-  <div>
-    <table class="center">
-     <tr>
-       <th>
-         <div class="card-itens  sizeEstante">
-          <div class="itenEstante ">
-            <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
-            <div class=" card-itens  ">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class=" card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-         </div>
-       </th>
-       <th>
-        <div class="card-itens sizeEstante  ">
-         <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
-           <div class=" card-itens ">
-             <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class=" card-itens">
-             <h5>R$ 39,99</h5>
-           </div>
-         </div>
-        </div>
-      </th>
-      <th>
-        <div class="card-itens sizeEstante ">
-         <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
-           <div class=" card-itens ">
-             <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class="preco card-itens">
-             <h5>R$ 39,99</h5>
-           </div>
-         </div>
-        </div>
-      </th>
-      <th>
-        <div class="card-itens sizeEstante ">
-         <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
-           <div class=" card-itens ">
-             <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class="preco card-itens">
-             <h5>R$ 39,99</h5>
-           </div>
-         </div>
-        </div>
-      </th>
-      <th>
-        <div class="card-itens sizeEstante ">
-         <div class="itenEstante">
-           <img class="imgEstante" src="../assets/livros/ação/Anjos e Demônios – Dan Brown.jpg" alt="">
-           <div class=" card-itens ">
-             <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-             </div>  <div class="preco card-itens">
-             <h5>R$ 39,99</h5>
-           </div>
-         </div>
-        </div>
-      </th>
       
-     </tr>
-     <tr>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
+        
+    <div class="container">
+      <div class="row">
+        <div class="row-lg-11">
+          <h3>Our Partners</h3>
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2"  class="active"></li>
+              <li data-target="#myCarousel2"></li>
+             
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner ">
+              <div class="item active" >
+                <div id="display"  class="container-fluid">
+                    <table>
+                       <tr><th>
+                        <div id="itensSlide" class="card-bg">
+                         <div class="imgCarousel2"> <img class="imgsize" src="../assets/San1R.jpg" alt="">
+                          
+                          <div class="textCenter">  R$39,99
+                          <p>Melhor celular do ano</p></div>
+                          
+                        </div>
+                        </div>
+                       </th>
+                    <th>
+                        <div id="itensSlide" class="card-bg">
+                          <div class="imgCarousel2"> <img class="imgsize" src="../assets/San1R.jpg" alt="">
+                            <div class="textCenter">  R$39,99
+                              <p>Melhor celular do ano</p></div>
+                          </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div id="itensSlide" class="card-bg">
+                          <div class="imgCarousel2"> <img class="imgsize" src="../assets/San1R.jpg" alt="">
+                            <div class="textCenter">  R$39,99
+                              <p>Melhor celular do ano</p></div>
+                          </div>
+                        </div>
+                    </th>
+                </tr>
+                    </table>
+                </div>
             </div>
+            <div class="item " >
+                <div id="display"  class="container-fluid">
+                    <table>
+                       <tr><th>
+                        <div id="itensSlide" class="card-bg">
+                          <div class="imgCarousel2"> <img class="imgsize" src="../assets/San1R.jpg" alt="" >
+                            <div class="textCenter">  R$39,99
+                              <p>Melhor celular do ano</p></div>
+                          </div>
+                        </div>
+                       </th>
+                    <th>
+                        <div id="itensSlide" class="card-bg">
+                          <div class="imgCarousel2"> <img  class="imgsize" src="../assets/San1R.jpg" alt="" >
+                            <div class="textCenter" >  R$39,99
+                              <p>Melhor celular do ano</p></div>
+                          </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div id="itensSlide" class="card-bg">
+                          <div class="imgCarousel2"> <img class="imgsize" src="../assets/San1R.jpg" alt="" >
+                            <div class="textCenter">  R$39,99
+                              <p>Melhor celular do ano</p></div>
+                          </div>
+                        </div>
+                    </th>
+                    
+                </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
+        
+        <div class="container text-center">    
+          <h3>Our Partners</h3>
+          <br>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Partner 1</p>
             </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
+            <div class="col-sm-2"> 
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Partner 2</p>    
             </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
+            <div class="col-sm-2"> 
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Partner 3</p>
             </div>
+            <div class="col-sm-2"> 
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Partner 4</p>
+            </div> 
+            <div class="col-sm-2"> 
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Partner 5</p>
+            </div>     
+            <div class="col-sm-2"> 
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <p>Partner 6</p>
+            </div> 
           </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-     </tr>
-     <tr>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="card-itens sizeEstante">
-          <div class="itenEstante">
-            <img class="imgEstante" src="../assets/Logo.png" alt="">
-            <div class="title-estante card-itens">
-              <h4 class="">A Invenção de Hugo Cabret-<br>de Brian Selznick </h4>
-              </div>  <div class="preco card-itens">
-              <h5>R$ 39,99</h5>
-            </div>
-          </div>
-        </div>
-      </td>
-     </tr>
-    </table>
-  </div>
-</div>
-</div>
+        </div><br>
+       
+
 
 <br><br>
 </div>
-</body>
-<footer class="container-fluid text-center  ">
-    <div>
-        <p class="float-end">
-            <a  class="tagA-hover" href="#"> Back to top</a>
-        </p>
-        <p >
-            © 2021 Cristian Gomes, web. ·<a href="#">Privado
-            </a>
-            ,
-            <a href="#">Termos
-            </a>
-        </p>
-    </div>
 
-</footer>
+        <footer class="container-fluid text-center">
+          <p>Footer Text</p>
+        </footer>
+        
+        </body>
+
+
+</body>
 </html>
