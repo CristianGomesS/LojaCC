@@ -71,7 +71,7 @@ header{color: #000;
     text-decoration: none;
 }
 
-.btn button:hover {
+.btn1 button:hover {
     background-image: linear-gradient(to right, rgb(130, 130, 143), rgb(229, 217, 248));
 }
 
