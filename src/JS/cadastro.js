@@ -13,6 +13,7 @@ function HouverErros() {
     validarNomes(erros);
     validarSenha(erros);
     validarEmail(erros);
+    validarDataNascimento(erros);
     printError(erros);
     return erros.length!==0;
 }
@@ -34,7 +35,7 @@ function validarSenha(erros) {
     const senha1=$('#senha1').val();
     const senha2=$('#senha2').val();
     if(senha1.length===0 || senha2.length===0) {
-        erros.push('Os campos de senhas não podem estar vazio');
+        erros.push('Os campos de senhas não podem estar vazio.');
         return;
     }
     if(senha1.length<8 || senha1!==senha2) {
@@ -62,6 +63,19 @@ function validarEmail(erros) {
     }
     if(isBadEmail(Email)) {
         erros.push('Email nao possui formato valido.');
+    }
+}
+
+
+function validarDataNascimento(erros) {
+    const Data=$('#date').val();
+    if(Data.length===0) {
+        erros.push('Campo de data de nascimento está vazio.');
+        return;
+    }
+    let data=Date.parse(Data);
+    if((new Date()) - data< 18*365*24*60*60*1000) {
+        erros.push('Idade deve ser maior do que 18 anos.');
     }
 }
 
