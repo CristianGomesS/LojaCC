@@ -35,7 +35,7 @@ header{color: #000;
 }
 .form2 {
     
-    width: 50%;
+    width: 25%;
     margin: auto;
     padding-top: 40px;
 }
@@ -54,12 +54,7 @@ header{color: #000;
     display: block;
     
 }
-.card-grupo2>label {
-    width: 10%;
-    color: rgb(80, 71, 71);
-    display: block;
-    
-}
+
 
 .card-grupo1>input {
     border-radius: 5px;
