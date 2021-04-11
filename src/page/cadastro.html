@@ -146,7 +146,7 @@
             <center>
                 <div class="card-grupo1 btn1">
 
-                    <button ><a class="tagA" href="login.html"> Cadastrar-se</button>
+                    <button id='confirmar'><a class="tagA" href="login.html"> Cadastrar-se</button>
 
                 </div>
             </center>
@@ -180,8 +180,9 @@
 
 <script>
 //Codigo Javascript:
+$('#confirmar').click(verificarErros);
 $(document).ready(()=>{$('#errorDiv').hide()})
-$('#entrada').change(verificarErros);
+//$('#entrada').change(verificarErros);
 
 function verificarErros() {
     if(validarNomes() && validarSenha()) printError('');
