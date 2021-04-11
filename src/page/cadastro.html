@@ -33,9 +33,9 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="active"><a href="../page/index.html">Home</a></li>
-              <li class=""><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
+              <li class=""><a href="#">Sobre</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Contato</a></li>
               <div class="btn-group">
                 <button class="btn btn2 btn-secondary dropdown-toggle active" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
@@ -83,8 +83,8 @@
               </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="pagamento.html"><span class="glyphicon glyphicon-shopping-cart"></span> Carinho</a></li>
-              <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="pagamento.html"><span class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a></li>
+              <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
               <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
                 </div>
               </div>
@@ -100,7 +100,7 @@
     <div class="alert alert-danger" id='errorDiv' role="alert">
         <p id='erro'></p>
     </div>
-    <form class="form2 " id='entrada' onsubmit="displayForm" name="FormCadas">
+    <form class="form2 " id='entrada' action='./login.html' onsubmit="return HouverErros()" name="FormCadas">
         <div class="card1">
             <div class="card-top1">
                 <img class="imglogin" src="../assets/loogin.png" alt="">
@@ -204,48 +204,7 @@
 </p>
 </footer>
 
-<script>
-//Codigo Javascript:
-$('#confirmar').click(verificarErros);
-$(document).ready(()=>{$('#errorDiv').hide()})
-//$('#entrada').change(verificarErros);
-
-function verificarErros() {
-    if(validarNomes() && validarSenha()) printError('');
-}
-
-function printError(coisa) {
-    if(coisa.length===0) {
-        $('#errorDiv').hide();
-        $('#error').text('');
-        return;
-    }
-    $('#errorDiv').show();
-    $('#erro').text('Erro: '.concat(coisa));
-}
-function validarSenha() {
-    const senha1=$('#senha1').val();
-    const senha2=$('#senha2').val();
-    if(senha1.length===0 && senha2.length===0) return true;
-    if(senha1.length<8 || senha1!==senha2) {
-        printError('Senha deve ser possuir no minimo 8 caracteres e os dois campos devem ser iguais');
-        return false;
-    }
-    return true;
-}
-function validarNomes() {
-    const Nome=$('#Nome').val();
-    const Sobrenome=$('#Sobrenome').val();
-    if(hasBadStuff(Nome) || hasBadStuff(Sobrenome)) {
-        printError('Nome e Sobrenome não podem conter digitos ou simbolos especiais tais como *, +, #, / ou espaço');
-        return false;
-    }
-    return true;
-}
-function hasBadStuff(string) {
-    return /[\d\ \*\\\-\/\+\@\!\#\$\%\&\(\)]/.test(string);
-}
-</script>
+<script src='../JS/cadastro.js'></script>
 
 </html>
 
