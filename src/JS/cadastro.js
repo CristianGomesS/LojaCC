@@ -14,6 +14,7 @@ function HouverErros() {
     validarSenha(erros);
     validarEmail(erros);
     validarDataNascimento(erros);
+    validarNumeroTelefone(erros);
     printError(erros);
     return erros.length!==0;
 }
@@ -35,7 +36,7 @@ function validarSenha(erros) {
     const senha1=$('#senha1').val();
     const senha2=$('#senha2').val();
     if(senha1.length===0 || senha2.length===0) {
-        erros.push('Os campos de senhas não podem estar vazio.');
+        erros.push('Campos de senhas estão vazios.');
         return;
     }
     if(senha1.length<8 || senha1!==senha2) {
@@ -47,10 +48,10 @@ function validarNomes(erros) {
     const Nome=$('#Nome').val();
     const Sobrenome=$('#Sobrenome').val();
     if(Nome.length===0 || Sobrenome.length===0) {
-        erros.push('Nome ou Sobrenome estão em branco.');
+        erros.push('Campo Nome ou Sobrenome estão vazios.');
         return;
     }
-    if(hasBadStuff(Nome) || hasBadStuff(Sobrenome)) {
+    if(isBadName(Nome) || isBadName(Sobrenome)) {
         erros.push('Nome e Sobrenome não podem conter digitos ou simbolos especiais tais como *, +, #, / ou espaço.');
     }
 }
@@ -62,7 +63,7 @@ function validarEmail(erros) {
         return;
     }
     if(isBadEmail(Email)) {
-        erros.push('Email nao possui formato valido.');
+        erros.push('Email possui formato inválido.');
     }
 }
 
@@ -73,14 +74,30 @@ function validarDataNascimento(erros) {
         erros.push('Campo de data de nascimento está vazio.');
         return;
     }
-    let data=Date.parse(Data);
+    const data=Date.parse(Data);
     if((new Date()) - data< 18*365*24*60*60*1000) {
         erros.push('Idade deve ser maior do que 18 anos.');
     }
 }
 
-function hasBadStuff(string) {
+function validarNumeroTelefone(erros) {
+    const telefone=$('#tel').val();
+    if(telefone.length===0) {
+        erros.push('Campo do telefone está vazio.');
+        return;
+    }
+    if(isBadPhoneNum(telefone)) {
+        erros.push('Número do telefone possui formato inválido.')
+    }
+}
+
+function isBadName(string) {
     return /[\d\ \*\\\-\/\+\@\!\#\$\%\&\(\)]/.test(string);
+}
+
+function isBadPhoneNum(tel) {
+    var RegExp = /\+\d{2}\s\(\d{2}\)\s\d{4,5}-?\d{4}/g;
+    return !RegExp.test(tel);
 }
 
 function isBadEmail(email) {
