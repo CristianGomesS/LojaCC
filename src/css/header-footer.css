@@ -17,18 +17,7 @@
     text-decoration: none;
     white-space: nowrap;
 }
-.topo ul{
-    margin:0;
-    background-color: #e6f5ff;
-    list-style: none;
-   
-   
-}
-.topo ul li{
-    display: inline;
-    padding: 50px 10px;
-   ;
-}
+
 .float-end{
     float: right;
 }
