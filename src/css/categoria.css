@@ -1,0 +1,46 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+/* Add a gray background color and some padding to the footer */
+footer {
+background-color: #f2f2f2;
+padding: 25px;
+}
+
+.carousel img {
+max-height: 50vh;
+width: 100%;
+object-fit: cover;
+padding: auto;
+}
+
+.carousel img:hover {
+max-height: 100vh;
+object-fit: fill;
+padding: auto;
+}
+
+body {
+background:url('../assets/PlanoDeFundo.jpg') no-repeat center center fixed;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.card>.card-itens>.card-img-top {
+max-width: 100%;
+object-fit: cover;
+}
+
+.card>.card-itens:hover {
+transition: all 1.5s ease;
+transform: scale(1.2);
+}
+
+.card-text {
+color: rgb(128, 48, 182);
+}
