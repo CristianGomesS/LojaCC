@@ -13,7 +13,7 @@ function HouverErros() {
     validarSenha(erros);
     validarEmail(erros);
     validarDataNascimento(erros);
-    validarNumeroTelefone(erros);
+    //validarNumeroTelefone(erros);
     printError(erros);
     return erros.length!==0;
 }
