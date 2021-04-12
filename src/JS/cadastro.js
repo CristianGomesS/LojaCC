@@ -4,7 +4,6 @@ $(document).ready(()=>{$('#errorDiv').hide()})
 //$('#entrada').change(verificarErros);
 
 function goToLoginIfOkay() {
-    $('#errorDiv').empty(); //reseta erros
     if(!HouverErros()) location.href = './login.html';
 }
 
@@ -21,9 +20,9 @@ function HouverErros() {
 
 
 function printError(erros) {
+    $('#errorDiv').empty();
     if(erros.length===0) {
         $('#errorDiv').hide();
-        $('#errorDiv').empty();
         return;
     }
     erros.map((erro)=> {

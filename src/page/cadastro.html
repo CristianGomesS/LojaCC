@@ -109,7 +109,7 @@
     <div class="alert alert-danger" id='errorDiv' role="alert">
         <p id='erro'></p>
     </div>
-    <form class="form2 " id='entrada' action='./login.html' onsubmit="return HouverErros()" name="FormCadas">
+    <form class="form2 " id='entrada' action='./login.html' onsubmit="return !HouverErros();" name="FormCadas">
         <div class="card1">
             <div class="card-top1">
                 <img class="imglogin" src="../assets/loogin.png" alt="">
@@ -127,11 +127,11 @@
             </div>
             <div class="card-grupo1">
               <span class="glyphicon glyphicon-lock">Senha</span>
-                <input id='senha1' type="password" name="Senha" placeholder="*******" required>
+                <input id='senha1' type="password" name="senha1" placeholder="*******" required>
             </div>
             <div class="card-grupo1">
                 <span class="glyphicon glyphicon-ok">Confirmar Senha</span>
-                <input id='senha2' type="password" name="Senha" placeholder="*******" required>
+                <input id='senha2' type="password" name="senha2" placeholder="*******" required>
             </div>
             <div class="card-grupo1">
                 <span class="	glyphicon glyphicon-send"> Email</span>
@@ -180,8 +180,7 @@
             <center>
                 <div class="card-grupo1 btn1">
 
-                    <button id='confirmar'><span class="glyphicon glyphicon-floppy-saved"></span><a class="tagA" href="login.html"> Cadastrar-se </button>
-
+                    <button id='confirmar' type="submit"><span class="glyphicon glyphicon-floppy-saved"></span> Cadastrar-se </button>
                 </div>
             </center>
 
