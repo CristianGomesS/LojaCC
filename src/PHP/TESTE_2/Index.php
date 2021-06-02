@@ -6,28 +6,63 @@
             $url =  strtoupper($_GET['url']);
            // echo $url;
     		switch ($url){
-	    		case "NOVOLIVRO":
-					require "Controladores/ControladorFormLivro.php";    
-				    $controlador = new ControladorFormProduto();
+	    		case "NOVOPRODUTO":
+					require "Controller/C-ProdutoInserir.php";    
+				    $controlador = new ControleNovoProduto();
 					$controlador->processaRequisicao();
 					break;
-				case "INCLUIRLIVRO":
-					require "Controladores/ControladorNovoLivro.php";    
-					$controlador = new ControladorNovoProduto();
+				case "ATUALIZARPRODUTO":
+					require "Controller/C-ProdutoAtualizar.php";    
+					$controlador = new ControleAtualizarProduto();
 					$controlador->processaRequisicao();
 					break;
-				case "EXCLUIRLIVRO":
-					require "Controladores/ControladorLivroExcluir.php";    
+				case "EXCLUIRPRODUTO":
+					require "Controler/C-ProdutoExcluir.php";    
 					$controlador = new ControladorProdutoExcluir();
 					$controlador->processaRequisicao();
 					break;
-			    case "LISTARLIVRO":
-					require "Controladores/ControladorLivroListar.php";
+			    case "LISTARPRODUTO":
+					require "Controller/C-ProdutoListar.php";
                     $controlador = new ControladorProdutoListar();
                     $controlador->processaRequisicao();
 					break;
+				case "CADASTRARFUNCIONARIO":
+					require "Controller/C-FuncionarioCadastrar.php";
+					$controlador = new ControleCadastrarFuncionario();
+					$controlador->processaRequisicao();
+					break;
+				case "EXCLUIRFUNCIONARIO":
+					require "Controller/C-FuncionarioDemitir.php";
+					$controlador = new ControleExcluirFuncionario();
+					$controlador->processaRequisicao();
+					break;
+				case "ATUALIZARFUNCIONARIO":
+					require "Controller/C-FuncionarioAtualizar.php";
+					$controlador = new ControleAtualizarFuncionario();
+					$controlador->processaRequisicao();
+					break;
+				case "ATUALIZARCLIENTE":
+					require "Controller/C-ClienteAtualizar.php";
+					$controlador = new ControleAtualizarCliente();
+					$controlador->processaRequisicao();
+					break;
+				case "CADASTRARCLIENTE":
+					require "Controller/C-ClienteCadastrar.php";
+					$controlador = new ControleCadastrarCliente();
+					$controlador->processaRequisicao();
+					break;
+				case "LISTARCLIENTE":
+					require "Controller/C-ClienteListar.php";
+					$controlador = new ControleListarCliente();
+					$controlador->processaRequisicao();
+					break;
+				case "RECUPERACAODENOMEESENHA":
+					require "Controller/C-RecuperarSenha.php";
+					$controlador = new ControleRecuperarNomeSenha();
+					$controlador->processaRequisicao($nome,$senha);
+					break;
 				default:
-				    require "Controladores/ControladorLivroListar.php";
+				    require "Controller/C-ProdutoListar.php";
 				    $controlador = new ControladorProdutoListar();
 				    $controlador->processaRequisicao();
 				    break;

@@ -1,15 +1,13 @@
 <?php
  require 'ProdutoDAO.php';
  class Produto{
-    private $Categoria_CategoriaID;
     private $IDProduto;
     private $Nome;
     private $Preco;
     private $Estoque;
+    private $Categoria_CategoriaID;
 
-    public function getCategoria(){
-        return $this->Categoria_CategoriaID;
-    }
+    
     public function getCodigo(){
         return $this->IDProduto;
     }
@@ -21,6 +19,9 @@
     }
     public function getEstoque(){
         return $this->Estoque;
+    }
+    public function getCategoria(){
+        return $this->Categoria_CategoriaID;
     }
 
     public function setCategoria($Categoria_CategoriaID){

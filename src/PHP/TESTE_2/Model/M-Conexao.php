@@ -4,7 +4,7 @@ class Conexao{
         $servername = "localhost:3307"; 
         $username = "root";
         $password = "";
-        $dbname = "lojacc";
+        $dbname = "LojaCC";
 
         try {
            $minhaConexao = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
