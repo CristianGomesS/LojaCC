@@ -30,7 +30,9 @@ class ControladorProdutoListar{
             }
             catch(PDOException $e){
                 return array();
-        }
+            }
+    //ao final da função, ele irá chamar a View, para renderizá-la:
+    require "V-ListarProduto.php";
      }
 }
 ?>

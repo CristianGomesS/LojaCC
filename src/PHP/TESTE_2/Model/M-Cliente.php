@@ -3,12 +3,12 @@
 require_once "Model/M-Conexao.php";
 
 class Cliente {
-    public $nome;
-    public $cpf;
-    public $cartao;
-    public $dataDeIngresso;
-    public $cnpjMercado;
-    public $senha;
+    private $nome;
+    private $cpf;
+    private $cartao;
+    private $dataDeIngresso;
+    private $cnpjMercado;
+    private $senha;
 
     public function __construct($nome, $cpf, $senha, $cnpjMercado=null, $cartao=null, $data=null) {
         $this->nome=$nome;

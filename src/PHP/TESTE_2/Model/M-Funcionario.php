@@ -2,10 +2,10 @@
 require_once "Model/M-Conexao.php";
 
 class Funcionario {
-    public $nome;
-    public $id;
-    public $cnpjMercado;
-    public $senha
+    private $nome;
+    private $id;
+    private $cnpjMercado;
+    private $senha
 
     public function __construct($nome, $cnpjMercado, $senha, $id=null) {
         $this->nome=$nome;
